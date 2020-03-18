@@ -31,7 +31,8 @@
     "react-bootstrap": "^1.0.0-beta.17",
     "react-dom": "^16.13.0",
     "react-scripts": "3.4.0",
-    "react-sound": "^1.2.0"
+    "react-sound": "^1.2.0",
+    "yarn": "^1.22.4"
   },
   "engines": {
     "node": "12.16.x"
@@ -47,7 +48,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "version": "0.1.0",
+  "version": "yarn install",
   "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.8.7",
@@ -57,5 +58,10 @@
     "ts-loader": "^6.2.1",
     "typescript": "^3.8.3",
     "webpack": "^4.42.0"
-  }
+  },
+  "description": "yes",
+  "main": "install",
+  "repository": "https://github.com/LeonStevens122/React-Tetris",
+  "author": "Leon Stevens <32592070+LeonStevens122@users.noreply.github.com>",
+  "license": "MIT"
 }
