@@ -1,0 +1,148 @@
+/* Main styles */
+html {
+    box-sizing: border-box;
+    font: 16px sans-serif;
+    background: black;
+    color: white;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.tetris {
+    padding: 8px;
+    margin: 0 auto;
+    width: 500px;
+}
+
+.tetris-board {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tetris-board__info {
+    width: 100px;
+}
+
+.tetris-board__text {
+    font-size: 18px;
+    color: #48dbfb;
+}
+
+.tetris-board__row {
+    display: flex;
+}
+
+/* Styles for tiles */
+[class*=col-] {
+    padding: 12px;
+    border: 1px solid #dfe5e8;
+}
+
+/* Default (empty) board column */
+.col-0 {
+    background-color: white;
+}
+
+/* Colors for tiles */
+.col-1 {
+    background: rgb(121,9,9);
+    background: -moz-radial-gradient(circle, rgba(121,9,9,1) 35%, rgba(0,212,255,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(121,9,9,1) 35%, rgba(0,212,255,1) 100%);
+    background: radial-gradient(circle, rgba(121,9,9,1) 35%, rgba(0,212,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#790909",endColorstr="#00d4ff",GradientType=1);
+}
+
+.col-2 {
+    background: rgb(0,255,51);
+    background: -moz-radial-gradient(circle, rgba(0,255,51,1) 0%, rgba(119,128,122,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(0,255,51,1) 0%, rgba(119,128,122,1) 100%);
+    background: radial-gradient(circle, rgba(0,255,51,1) 0%, rgba(119,128,122,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00ff33",endColorstr="#77807a",GradientType=1);
+}
+
+.col-3 {
+    background: rgb(2,0,36);
+    background: -moz-radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
+}
+
+.col-4 {
+    background: rgb(63,94,251);
+    background: -moz-radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endColorstr="#fc466b",GradientType=1);
+}
+
+.col-5 {
+    background: rgb(255,166,0);
+    background: -moz-radial-gradient(circle, rgba(255,166,0,1) 17%, rgba(76,25,231,1) 78%);
+    background: -webkit-radial-gradient(circle, rgba(255,166,0,1) 17%, rgba(76,25,231,1) 78%);
+    background: radial-gradient(circle, rgba(255,166,0,1) 17%, rgba(76,25,231,1) 78%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffa600",endColorstr="#4c19e7",GradientType=1);
+}
+
+.col-6 {
+    background: rgb(131,58,180);
+    background: -moz-radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#fcb045",GradientType=1);
+}
+
+.col-7 {
+    background: rgb(76,25,231);
+    background: -moz-radial-gradient(circle, rgba(76,25,231,1) 6%, rgba(0,255,51,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(76,25,231,1) 6%, rgba(0,255,51,1) 100%);
+    background: radial-gradient(circle, rgba(76,25,231,1) 6%, rgba(0,255,51,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4c19e7",endColorstr="#00ff33",GradientType=1);
+}
+
+/* Styles for buttons */
+.tetris__block-controls,
+.tetris__game-controls {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.tetris__game-controls {
+    margin-bottom: 16px;
+}
+
+.btn {
+    padding: 12px 21px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #3498db;
+    border: 0;
+    cursor: pointer;
+    transition: background-color .25s ease-in;
+}
+
+    .btn:hover {
+        background-color: #2980b9;
+    }
+
+.tetris__block-controls .btn:first-child,
+.tetris__game-controls .btn:first-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.tetris__block-controls .btn:not(:first-child),
+.tetris__game-controls .btn:not(:first-child) {
+    border-left: 1px solid #2980b9;
+}
+
+.tetris__block-controls .btn:last-child,
+.tetris__game-controls .btn:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
