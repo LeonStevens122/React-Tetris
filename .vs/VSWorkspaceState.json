@@ -4,9 +4,7 @@
     "\\public",
     "\\src",
     "\\src\\Assets",
-    "\\src\\Components",
-    "\\src\\Utils",
-    "\\src\\Utils\\Events"
+    "\\src\\Components"
   ],
   "SelectedNode": "\\tsconfig.json",
   "PreviewInSolutionExplorer": false
