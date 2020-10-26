@@ -1,3 +1,23 @@
+# Tetris Game
+### React Based single page application. Written in Typescript.
+### This version of Tetris runs in browser 
+
+
+
+## Keys
+* **Spacebar** : Start game.
+* **Up Arrow** : Rotate left.
+* **Left Arrow** : Move shape left.
+* **Right Arrow** : Move shape right.
+* **Down Arrow** : Lower shape.
+
+
+
+### Credit
+In 1984, Tetris® was born from the imagination of computer programmer Alexey Pajitnov. Inspired by his favorite puzzle board game, Pentominos, Pajitnov created an electronic game that let players arrange puzzle pieces in real time as they fell from the top of the playing field. The resulting design was a game that used seven distinctive geometric playing pieces, each made up of four squares. Pajitnov called this game “Tetris,” a combination of “tetra” (the Greek word meaning “four”) and “tennis” (his favorite sport).
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
